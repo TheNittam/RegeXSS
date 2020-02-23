@@ -7,9 +7,8 @@ if (!file_exists("regexss.json")) {
 	$regJSON = fopen("regexss.json", "w");
 	fwrite($regJSON, "[]");
 	fclose($regJSON);
+}else{
 	$readJSON = file_get_contents('regexss.json');
 	echo $readJSON;
-}else{
-	echo "[]";
 }
 ?>
