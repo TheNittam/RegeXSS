@@ -1,0 +1,5 @@
+
+table.dataTable{background: #ffffff;}
+table.dataTable.dtr-inline.collapsed > tbody > tr > td.details-control:first-child:before { display: none;}
+table.dataTable th, table.dataTable td { white-space: normal; }
+.child {table-layout:fixed} .child td {word-wrap:break-word; white-space: normal !important;}
