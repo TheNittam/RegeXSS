@@ -85,7 +85,7 @@
   <script src="js/dataTables/dataTables.bootstrap4.min.js"></script>
   <script src="js/dataTables.responsive.min.js"></script>
   <script>
-    function clearLog(){fetch("include/clearlog.php");}
+    function clearLog(){fetch("include/action.php?action=clearLog");}
     $(document).ready(function(){
       var a=$(".regexssedLog").DataTable({
         responsive:{
@@ -96,12 +96,12 @@
             }
           },
 
-          ajax:{url:"include/jsonReader.php","dataSrc": ""},
+          ajax:{url:"include/action.php?action=json","dataSrc": ""},
           columns:[{data:"date"},{data:"execURL"},{data:"cookie"},{data:"data"}]
         });
 
       setInterval(function(){a.ajax.reload()},1500)});
-      setInterval(function(){$.getJSON("include/jsonReader.php",function(e){document.getElementById("triagger").innerHTML=e.length})},1500);
+      setInterval(function(){$.getJSON("include/action.php?action=json",function(e){document.getElementById("triagger").innerHTML=e.length})},1500);
   </script>
 </body>
 </html>
