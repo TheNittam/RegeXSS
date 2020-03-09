@@ -5,7 +5,7 @@ header("Access-Control-Allow-Origin: *");
 
 date_default_timezone_set("Asia/Kathmandu");
 
-$datajson = 'include/regexss.json';
+$datajson = 'triage/regexss.json';
 $data = $divider = "";
 
 if($_SERVER["REQUEST_METHOD"] == "GET"){
@@ -44,9 +44,9 @@ if(empty($divider[0])){
 		$array_data[] = $form_data;
 		$data_proccesed = json_encode($array_data, JSON_PRETTY_PRINT);
 		file_put_contents($datajson, $data_proccesed);
-		echo "Successful !!!";
+		echo "Successful!!!";
 	}else{
-		echo "Something Went Wrong !!!";
+		echo "Something Went Wrong!!!";
 	}
 }
 ?>
