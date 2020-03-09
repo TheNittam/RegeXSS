@@ -85,7 +85,7 @@
   <script src="js/dataTables/dataTables.bootstrap4.min.js"></script>
   <script src="js/dataTables.responsive.min.js"></script>
   <script>
-    function clearLog(){fetch("include/action.php?action=clearLog");}
+    function clearLog(){fetch("include/action.php?action=clearlog");}
     $(document).ready(function(){
       var a=$(".regexssedLog").DataTable({
         responsive:{
