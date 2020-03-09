@@ -26,7 +26,7 @@ if($url !== "127.0.0.1:3333"){
   <link rel="stylesheet" href="css/theme.css" type="text/css">
   <link rel="stylesheet" href="css/custom.css" type="text/css">
   <link rel="stylesheet" type="text/css" href="css/dataTables/dataTables.bootstrap4.min.css">
-  <title>RegeXSS v1 (Beta) | TheNittam</title>
+  <title>RegeXSS v1.1 | TheNittam</title>
   <meta name="keywords">
 </head>
 
