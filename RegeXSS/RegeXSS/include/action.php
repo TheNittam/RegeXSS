@@ -46,8 +46,8 @@ if($action == "backendpayload"){
 	
 	if(file_exists($backendJSpayload)){
 		file_put_contents($backendJSpayload, $payload);
-		echo "Successful !!!";
+		echo "Successful!!!";
 	}else{
-		echo "Something Went Wrong !!!";
+		echo "Something Went Wrong!!!";
 	}
 }?>
