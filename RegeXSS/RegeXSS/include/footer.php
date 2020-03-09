@@ -46,7 +46,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript">
-    setInterval(function(){$.getJSON("include/jsonReader.php",function(e){document.getElementById("triagger").innerHTML=e.length})},1500);
+    setInterval(function(){$.getJSON("include/action.php?action=json",function(e){document.getElementById("triagger").innerHTML=e.length})},1500);
   </script>
   
 </body>
