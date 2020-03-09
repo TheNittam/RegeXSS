@@ -13,7 +13,7 @@ banner(){
   / /_/ / _ \/ __ \`/ _ \|   /\__ \\__ \\ 
  / _, _/  __/ /_/ /  __/   |___/ /__/ / 
 /_/ |_|\___/\__, /\___/_/|_/____/____/  
-           /____/version - 1 (Beta)
+           /____/version - 1.1
 
 https://nirmaldahal.com.np | By #Nittam
 https://cryptogennepal.com | CryptoGenNepal"""
